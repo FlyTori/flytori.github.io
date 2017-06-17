@@ -8,7 +8,9 @@ article figcaption {
 	text-align: center;
 }
 
-
+#neko-to-top {
+	visibility: hidden;
+}
 
 
 
