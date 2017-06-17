@@ -12,7 +12,11 @@ article figcaption {
 	visibility: hidden;
 }
 
-
+/*.pb-medium .container .row{
+	padding-top: 48px;
+	padding-bottom: 48px;
+	background-color: #ddd;
+}*/
 
 /*
 |--------------------------------------------------------------------------

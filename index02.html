@@ -7,29 +7,32 @@
 <html lang="en">
 <!--<![endif]-->
 <head>
-	<!-- Basic Page Needs
-	================================================== -->
+	<!-- Basic Page Needs ================================================== -->
 	<meta charset="utf-8">
 	<title>Tori Chen | Portfolio</title>
-	<meta name="description" content="neko-description">
-	<meta name="author" content="Little NEKO">
-	<!-- Mobile Specific Metas
-	================================================== -->
+	<meta name="description" content="personal website">
+	<meta name="author" content="Tori Chen">
+	
+	<!-- Mobile Specific Metas ================================================== -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<!-- CSS
-	================================================== -->
+	
+	<!-- CSS ================================================== -->
+	
 	<!-- web font  -->
-	<link type="text/css" rel="stylesheet" href="css/custom.css">
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>	<!-- Neko framework  -->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- Revolution slider  -->
+	<link rel="stylesheet" type="text/css" href="js-plugins/rs-plugin/css/settings.css" media="screen" />
+	<!-- Neko framework  -->
 	<link type="text/css" rel="stylesheet" href="custom-icons/css/custom-icons.css">
 	<link type="text/css" rel="stylesheet" href="neko-framework/external-plugins/external-plugins.min.css">
 	<link type="text/css" rel="stylesheet" href="neko-framework/css/layout/neko-framework-layout.css">
-	<link type="text/css" rel="stylesheet" id="color" href="neko-framework/css/color/neko-framework-color.css">
-	
+	<link type="text/css" rel="stylesheet" id="color" href="neko-framework/css/color/neko-framework-silver.css">
 
-	<!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="images/favicon.ico">
+	<link type="text/css" rel="stylesheet" href="css/custom.css">
+	
+	<!-- Favicons ================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico?v=2">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -38,37 +41,15 @@
 	<script src="neko-framework/external-plugins/modernizr/modernizr.custom.js"></script>
 
 </head>
-<body class="activate-appear-animation header-7 parallaxed-footer">
+<body class="activate-appear-animation header-2 parallaxed-footer" data-spy="scroll" data-target=".menu-header" data-offset="300">
+	<div id="preloader" class="v-align-translate">
+		<div class="neko-preloader"></div>
+	</div>
 	<!-- global-wrapper -->
 	<div id="global-wrapper">
 		<!-- header -->
 		<header class="menu-header navbar-fixed-top" role="banner">
-			<section id="pre-header">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6 hidden-xs">
-							<ul class="quick-menu">
-								<li><a href="template-site-map.html" class="linkLeft">Site map</a></li>
-								<li><a href="template-about.html">About us</a></li>
-								<li><a href="template-team.html">Our team</a></li>
-								<li><a href="template-contact.html">Contact</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-6 col-xs-12 quick-contact">
-							<div class="contact-phone"> <i class="icon-mobile"></i>615.987.1234 </div>
-							<ul class="social-icons">
-								<li><a href="#" class="rss" title="rss"><i class="icon-glyph-342"></i></a></li>
-								<li><a href="#" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a></li>
-								<li><a href="#" class="twitter" title="twitter"><i class="icon-glyph-339"></i></a></li>
-								<li><a href="#" class="gplus" title="gplus"><i class="icon-glyph-317"></i></a></li>
-								<li><a href="#" class="dribbble" title="dribbble"><i class="icon-dribbble"></i></a></li>
-								<li><a href="#" class="linkedin" title="linkedin"><i class="icon-linkedin"></i></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
-
+			
 			<div class="container">
 				<nav class="navbar navbar-default" role="navigation">
 					<div class="navbar-header">
@@ -82,18 +63,30 @@
 						<!-- / hamburger button -->
 
 						<!-- Logo -->
-						<a class="navbar-brand" href="index.html"><img src="images/mylogo.png" width="140px" alt="Tori Chen"/></a>
+						<a class="navbar-brand" href="index.html">
+							<img src="images/mylogo.png" width="180px" alt="Tori Chen Portfolio" class="main-logo"/>
+							<!-- <img src="images/main-logo-light.png" alt="Tori Chen" class="main-logo-light"/> -->
+						</a>
 						<!-- /Logo -->
 					</div>
 					<div class="collapse navbar-collapse">
 						<!-- Main navigation -->
-						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">WORK</a></li>
-							<li><a href="#">ABOUT</a></li>
+						<ul class="nav navbar-nav navbar-right" id="scroll-menu">
+							<li>
+								<a href="#home">Home</a>
+							</li>
+
+							<li> 
+								<a href="#portfolio">Portfolio</a>
+							</li>
+
+							<li>
+								<a href="#contact">contact</a>
+							</li>
+
 						</ul>
 						<!-- / End main navigation -->
 					</div>
-
 
 				</nav>
 			</div>
@@ -101,190 +94,381 @@
 		</header>
 		<!-- / header -->
 
-		<!-- content -->
 		<main id="content">
-			<!-- <header class="page-header">
+			<section class="pt-medium light-color" id="home">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
-							<h1>Portfolio <small>3 columns</small></h1>
+						<div class="col-lg-4  col-md-6 hidden-sm hidden-xs">
+							<img src="images/tori.jpg" style="margin-bottom:30px;"alt="services" width="303" class="img-responsive">
 						</div>
-						<div class="col-md-6">
-							<ol class="breadcrumb">
-								<li><a href="#">Home</a></li>
-								<li><a href="#">Library</a></li>
-								<li class="active">Data</li>
-							</ol>
+						<div class="col-lg-8 col-md-6 mb-sm">
+							<h1 class="large no-shadow">
+								<span>ABOUT ME</span>
+								Experience design is a journey about<span class="text-main-color inline">problem solving.</span>
+							</h1>
+							<p>
+								Hi! I'm Tori Chen. I currently work at Mozilla as an interaction designer based in Taipei. My daily job includes finding problems, creating solutions, and making life easier for our users. I work on smart TV, phones, and the most exciting Firefox browser! Prior to joining Mozilla, I stayed two and a half year in Tokyo studying HCI in graduated school at Waseda University.
+							</p>
+							<p>
+								I am passionate about good design. I love open source , open web technologies, and cats!
+							</p>
+							<p>
+							You can always reach me through email: jiansheau1357@gmail.com
+							</p>
+
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<!-- parallax quote --> 
+			<section id="portfolio" class="parallax text-light image-background image-10" data-stellar-background-ratio="0.2">
+				<div class="mask opacity-3">
+					<div class="container">
+						<div class="row pt-large pb-large text-center">
+							<!-- <h1>The details are not the details. They make the design.</h1> -->
 						</div>
 					</div>
 				</div>
-			</header> -->
+			</section>
+			<!-- / parallax quote -->
 
 			<!-- portfolio -->
-			<section class="pt-medium pb-medium effect-zoe">
-				<div class="container">
-					<div class="row">
-
-					<!-- item -->
-					<div class="col-md-4">
-						<article class="mb">
-							<figure>
-								<a href="">
-									<img src="images/portfolio/tv-home-mockup01.jpg" alt="" class="full-width">
-								</a>
-							</figure>
-							<div>
-								<figcaption>Firefox for Android Projects</figcaption>
-							</div>
-						</article>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+						<div  class="btn-group mt mb filter-items">
+							<button type="button" class="filter-label btn default active" data-filter="*">All</button>
+							<button type="button" class="filter-label btn default"  data-filter=".interaction">INTERACTION</button>
+							<button type="button" class="filter-label btn default"  data-filter=".smart-tv">SMART TV</button>
+							<button type="button" class="filter-label btn default"  data-filter=".phone">PHONE</button>
+							<button type="button" class="filter-label btn default"  data-filter=".research">RESEARCH</button>
+							<button type="button" class="filter-label btn default"  data-filter=".web">WEB</button>
+							<button type="button" class="filter-label btn default"  data-filter=".print">PRINT</button>
+						</div>
 					</div>
-					<!-- / item -->
 
-					<!-- item -->
-					<div class="col-md-4">
-						<article class="mb">
-							<figure>
-								<a href="">
-									<img src="images/portfolio/tv-browser-mockup01.jpg" alt="" class="full-width">
-								</a>
-							</figure>
-							<div>
-								<figcaption>Firefox Desktop Projects</figcaption>
-							</div>
-						</article>
-					</div>
-					<!-- / item -->
-
-					<!-- item -->
-					<div class="col-md-4">
-						<article class="mb">
-							<figure>
-								<a href="">
-									<img src="images/portfolio/tv-store-mockup01.jpg" alt="" class="full-width">
-								</a>
-							</figure>
-							<div>
-								<figcaption>Firefox OS Smart TV</figcaption>
-							</div>
-						</article>
-					</div>
-					<!-- / item -->
-
-					<!-- item -->
-					<div class="col-md-4">
-						<article class="mb">
-							<figure>
-								<a href="">
-									<img src="images/portfolio/tv-nextgen02.jpg" alt="" class="full-width">
-								</a>
-							</figure>
-							<div>
-								<figcaption>Research Project</figcaption>
-							</div>
-						</article>
-					</div>
-					<!-- / item -->
-
-					<!-- item -->
-					<div class="col-md-4">
-						<article class="mb">
-							<figure>
-								<a href="">
-									<img src="images/portfolio/tv-keyboard-mockup01.jpg" alt="" class="full-width">
-								</a>
-							</figure>
-							<div>
-								<figcaption>Design Process</figcaption>
-							</div>
-						</article>
-					</div>
-					<!-- / item -->
-
-					<!-- item -->
-					<div class="col-md-4">
-						<article class="mb">
-							<figure>
-								<a href="">
-									<img src="images/portfolio/tv-sendvideo-mockup01.jpg" alt="" class="full-width">
-								</a>
-							</figure>
-							<div>
-								<figcaption>Design Talks & Workshop</figcaption>
-							</div>
-						</article>
-					</div>
-					<!-- / item -->
-
-					<!-- item -->
-					<div class="col-md-4">
-						<article class="mb">
-							<figure>
-								<a href="">
-									<img src="images/portfolio/firefoxos-phone01.jpg" alt="" class="full-width">
-								</a>
-							</figure>
-							<div>
-								<figcaption>Feature Phone Concept Projects</figcaption>
-							</div>
-						</article>
-					</div>
-					<!-- / item -->
-
-
-		</div>
-	</div>
-</section>
-<!-- / portfolio -->
-</main>
-<!-- / content -->
-
-<!-- footer -->
-<footer id="main-footer">
-	<div class="container">
-		<div class="row">
-
-			<div class="col-sm-12 text-center">
-				<div class="footer-widget">
-					<!-- <a href="home-1.html"><img src="images/logo-typo.png" alt="tori_chen-logo" class="pb responsive" /></a> -->
-					<p>Contact me with</p>
-					<ul class="social-icons dark-color circle">
-						<li>
-							<a href="mailto:jiansheau1357@gmail.com" target="_blank" class="linkedin" title="email"><i class="icon-glyph-334"></i></a>
-						</li>
-						<li>
-							<a href="https://tw.linkedin.com/in/hsiao-ting-tori-chen-5927aa92" target="_blank" class="facebook" title="linkedin"><i class="icon-glyph-308"></i></a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/profile.php?id=100000403567981&ref=bookmarks" target="_blank" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a>
-						</li>
-						<li>
-							<a href="https://github.com/FlyTori" target="_blank" class="facebook" title="github"><i class="icon-glyph-318"></i></a>
-						</li>
-					</ul> 
 				</div>
 			</div>
 
-		</div>
+			<section class="clearfix caption-grid-layout free-wall" id="freewall" data-gutterx="20" data-guttery="20">				
+				<article class="brick caption interaction smart-tv">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/tv-home-mockup01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Firefox OS TV, Navigation Model</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article class="brick caption interaction smart-tv">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/tv-browser-mockup01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Firefox OS TV, Browser</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction smart-tv">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/tv-store-mockup01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Firefox OS TV, Marketplace</h3></a>
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption research smart-tv">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/tv-nextgen02.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Next Generation TV Experience Design</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction smart-tv">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/tv-keyboard-mockup01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Firefox OS TV, Keyboard</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction smart-tv">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/tv-sendvideo-mockup01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Firefox OS TV, Cast Video</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction phone">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/firefoxos-phone01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Firefox OS Phone</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction phone">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/oneplus-oxygenos.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Oneplus Oxygen OS</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction phone">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/app-csx.png" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>CSX - CLOUD SERVICE EXCHANGE</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction phone">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/app_waseda.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Mobile Site of Waseda University</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption interaction phone research">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/foodfit-01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>FoodFit - Food Diary App</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+				
+				<article  class="brick caption web">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/web_tapcpr.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Gay Marriage Petition Taiwan | Web</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption web">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/web_talent.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Talent Search | Web</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption web">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/web_zhuxue.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Japanese Language School | Web</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption print">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/print_card02.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>New Year Greeting Card</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption print">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/print_poster01.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Open Source Conference Poster</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption print">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/print_poster02.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Poster for Photography Exhibition</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+				<article  class="brick caption print">
+					<figure>
+						<!-- <a href="#"> -->
+							<img src="images/portfolio/print_poster03.jpg" alt="" class="full-width">
+						<!-- </a> -->
+						<figcaption>
+							<!-- <a href="#"> --><h3>Poster for Art Lectures</h3><!-- </a> -->
+							<p class="hidden-xs"></p>
+						</figcaption>
+					</figure>
+				</article>
+
+			</section>
+			<!-- portfolio -->
+
+			<!-- parallax quote --> 
+			<section class="main-color">
+
+				<div class="container">
+					<div class="row pt-large pb-large">
+						<div class="col-md-12 text-center">
+							<!-- <h1 class="large">
+								A goal is a dream with a deadline.<br />
+								<small class="no-shadow">— NAPOLEON HILL</small>
+							</h1> -->
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- / parallax quote -->
+
+			<!-- contact --> 
+			<section id="contact" class="pt-large image-background image-2">
+
+				<div class="container">
+					<div class="row pb-large"> 
+
+						<div class="col-md-6 col-md-offset-3 text-center" data-nekoanim="fadeInUp" >
+							<div class="box main-color">
+								<i class="icon-glyph-223 x-large"></i>
+								<h2 class="mt">Thanks for stopping by!<br/>You can reach me at:</h2>
+								<!-- <h2></h2> -->
+								<address>
+								<br/>
+								<a href="mailto:jiansheau1357@gmail.com">jiansheau1357@gmail.com</a>
+								<ul class="social-icons dark-color circle">
+								<br/>
+								<li>
+									<a href="https://www.facebook.com/profile.php?id=100000403567981&ref=bookmarks" target="_blank" class="facebook" title="facebook"><i class="icon-glyph-320"></i></a>
+								</li>
+								<li>
+									<a href="https://tw.linkedin.com/in/hsiao-ting-tori-chen-5927aa92" target="_blank" class="facebook" title="facebook"><i class="icon-glyph-308"></i></a>
+								</li>
+								<li>
+									<a href="https://github.com/FlyTori" target="_blank" class="facebook" title="github"><i class="icon-glyph-318"></i></a>
+								</li>
+							</ul> 
+								</address>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+			<!-- / contact -->
+
+		</main>
+		<!-- / content -->
+
+		<!-- footer -->
+		<footer id="main-footer">
+			<div class="container">
+				<div class="row">
+
+				</div>
+			</div>
+
+			<div id="footer-rights">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Copyright © 2016 <a href="http://flytori.com" target="blank">Tori Chen</a> / All rights reserved.</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- / footer -->
 	</div>
+	<!-- global wrapper -->
 
-</footer>
-<!-- / footer -->
-</div>
-<!-- global wrapper -->
+	<!-- End Document ================================================== -->
 
-<!-- End Document ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script type="text/javascript" src="neko-framework/js/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
 
-<!-- Placed at the end of the document so the pages load faster -->
-<script type="text/javascript" src="neko-framework/js/jquery/jquery-1.10.2.min.js"></script>
-<script type="text/javascript" src="neko-framework/js/jquery-ui/jquery-ui-1.8.23.custom.min.js"></script>
+	<!-- external framework plugins -->
+	<script type="application/javascript" src="neko-framework/external-plugins/external-plugins.min.js"></script>
 
-<!-- external framework plugins -->
-<script type="application/javascript" src="neko-framework/external-plugins/external-plugins.min.js"></script>
-<!-- neko framework script -->
-<script type="text/javascript" src="neko-framework/js/neko-framework.js"></script>
+	<!-- neko framework script -->
+	<script type="text/javascript" src="neko-framework/js/neko-framework.js"></script>
 
+	<!-- Revolution slider -->
+	<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+	<script type="text/javascript" src="js-plugins/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
 
-<!-- neko custom script -->	
-<script src="js/custom.js"></script>
+	<!-- neko custom script -->	
+	<script src="js/custom.js"></script>
+
 </body>
 </html>
