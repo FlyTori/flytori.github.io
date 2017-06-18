@@ -18,6 +18,19 @@ article figcaption {
 	/*background-color: #ddd;*/
 }
 
+.thumbnail_work figure{
+	/*background: #333;*/
+}
+
+.thumbnail_work img{
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.thumbnail_work img:hover {
+	opacity: 0.6;
+}
+
 /*
 |--------------------------------------------------------------------------
 | Revolution slider customization 
