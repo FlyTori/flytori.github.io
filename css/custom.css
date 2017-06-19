@@ -18,17 +18,23 @@ article figcaption {
 	/*background-color: #ddd;*/
 }
 
-.thumbnail_work figure{
+.thumbnail-work figure{
 	/*background: #333;*/
 }
 
-.thumbnail_work img{
+/* homepage thumbnail hover effect */
+.thumbnail-work img{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-.thumbnail_work img:hover {
+.thumbnail-work img:hover {
 	opacity: 0.6;
+}
+
+/* project single page img border */
+.single-project img{
+	border: 1px solid #ddd;
 }
 
 /*
