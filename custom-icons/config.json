@@ -2541,20 +2541,6 @@
       ]
     },
     {
-      "uid": "b4d1d559863e88416006cb72d0355724",
-      "css": "glyph",
-      "code": 59061,
-      "src": "custom_icons",
-      "selected": false,
-      "svg": {
-        "path": "M1000 587.3L884.8 587.4 764.2 352.9H296.6L122 588.2 0 588.2V881H117.8C117.8 881.5 117.6 881.9 117.6 882.4 117.6 947.2 170.4 1000 235.3 1000S352.9 947.2 352.9 882.4C352.9 881.9 352.8 881.5 352.8 881H647.2C647.2 881.5 647.1 881.9 647.1 882.4 647.1 947.2 699.8 1000 764.7 1000S882.4 947.2 882.4 882.4C882.4 881.9 882.2 881.5 882.2 881H1000V587.3ZM818.7 587.5L589.5 587.7V411.8H728.3L818.7 587.5ZM326.1 411.8H530.6V587.8L195.3 588.1 326.1 411.8ZM235.3 941.2C202.9 941.2 176.5 914.8 176.5 882.4S202.9 823.5 235.3 823.5 294.1 849.9 294.1 882.4 267.7 941.2 235.3 941.2ZM764.7 941.2C732.3 941.2 705.9 914.8 705.9 882.4S732.3 823.5 764.7 823.5 823.5 849.9 823.5 882.4 797.1 941.2 764.7 941.2ZM941.2 822.2H865.2C844.6 787.9 807.5 764.7 764.7 764.7S684.8 787.9 664.2 822.2H335.8C315.2 787.9 278.1 764.7 235.3 764.7S155.4 787.9 134.8 822.2H58.8V647.1L941.2 646.2V822.2Z",
-        "width": 1000
-      },
-      "search": [
-        "glyph"
-      ]
-    },
-    {
       "uid": "28505a3d4323f7788d149cc0ac4d7ca1",
       "css": "glyph-85",
       "code": 59477,
@@ -4957,6 +4943,308 @@
       "css": "up-open",
       "code": 59744,
       "src": "entypo"
+    },
+    {
+      "uid": "f978da58836f23373882916f05fb70b4",
+      "css": "doc",
+      "code": 59747,
+      "src": "linecons"
+    },
+    {
+      "uid": "75347b319511175da51af3955919dbac",
+      "css": "key",
+      "code": 59748,
+      "src": "linecons"
+    },
+    {
+      "uid": "02ad0683eaa9826f396fa7ccf1f1fb25",
+      "css": "database",
+      "code": 59749,
+      "src": "linecons"
+    },
+    {
+      "uid": "2cc73cc335f054682c04fe63439c4dcb",
+      "css": "trash",
+      "code": 59750,
+      "src": "linecons"
+    },
+    {
+      "uid": "c2958cfd1eed4434ab6e4bd6ab337af9",
+      "css": "cup",
+      "code": 59751,
+      "src": "linecons"
+    },
+    {
+      "uid": "cdcc1a6693235d1205370c1f47d5e7ad",
+      "css": "megaphone",
+      "code": 59752,
+      "src": "linecons"
+    },
+    {
+      "uid": "4b7f817f780705a5d267ad59e855da91",
+      "css": "graduation-cap",
+      "code": 59753,
+      "src": "linecons"
+    },
+    {
+      "uid": "1ea8ad6dbe1ae9a73565ad16cf88de19",
+      "css": "location",
+      "code": 59754,
+      "src": "linecons"
+    },
+    {
+      "uid": "5b1a68729f60f8be3769238379d1b8e9",
+      "css": "comment",
+      "code": 59755,
+      "src": "linecons"
+    },
+    {
+      "uid": "04309fefab5210bf502d278d65d134cf",
+      "css": "fire",
+      "code": 59756,
+      "src": "linecons"
+    },
+    {
+      "uid": "6fbd93c0d220507921015a15575009e5",
+      "css": "paper-plane",
+      "code": 59757,
+      "src": "linecons"
+    },
+    {
+      "uid": "2aeb4987b469d22fcb8b471b6d2cdfff",
+      "css": "pencil",
+      "code": 59758,
+      "src": "linecons"
+    },
+    {
+      "uid": "06a2fbb04dffecdb444936073cae9123",
+      "css": "thumbs-up",
+      "code": 59759,
+      "src": "linecons"
+    },
+    {
+      "uid": "f6eb7f8aed5dc03a323d5ef2895ae50b",
+      "css": "cloud",
+      "code": 59760,
+      "src": "linecons"
+    },
+    {
+      "uid": "1e89103762be72b0720eda0468e62b90",
+      "css": "globe",
+      "code": 59761,
+      "src": "linecons"
+    },
+    {
+      "uid": "930c31d4c72bd792b5dceb6de607c3e0",
+      "css": "tag",
+      "code": 59762,
+      "src": "linecons"
+    },
+    {
+      "uid": "a58c05a8a3ba59ababd4860a30892560",
+      "css": "eye",
+      "code": 59763,
+      "src": "linecons"
+    },
+    {
+      "uid": "efaf7e97e8b1aa7c2b52cc29432c96ca",
+      "css": "inbox",
+      "code": 59764,
+      "src": "linecons"
+    },
+    {
+      "uid": "52cde78d270e411ccf22c9ec02910d69",
+      "css": "cd",
+      "code": 59765,
+      "src": "linecons"
+    },
+    {
+      "uid": "47e9e56d2b5abe839bcf1e014d643dea",
+      "css": "lock",
+      "code": 59766,
+      "src": "linecons"
+    },
+    {
+      "uid": "359f380b2113cb40259269aed843e33d",
+      "css": "attach",
+      "code": 59767,
+      "src": "linecons"
+    },
+    {
+      "uid": "6a9f3405aba67bcaee81e7ea38946b27",
+      "css": "mobile",
+      "code": 59768,
+      "src": "linecons"
+    },
+    {
+      "uid": "7697f1734d53461137f05faab3f79cf0",
+      "css": "desktop",
+      "code": 59769,
+      "src": "linecons"
+    },
+    {
+      "uid": "8573943a49ed6dd8f7819070445baa46",
+      "css": "photo",
+      "code": 59770,
+      "src": "linecons"
+    },
+    {
+      "uid": "b59cc4d390a6df564a055f43c03a6af5",
+      "css": "camera",
+      "code": 59771,
+      "src": "linecons"
+    },
+    {
+      "uid": "cc5e3696cf6c3ad8c32daaea05355a99",
+      "css": "tv",
+      "code": 59772,
+      "src": "linecons"
+    },
+    {
+      "uid": "d58dc0a0927a7dea2992f615f2fbf400",
+      "css": "wallet",
+      "code": 59773,
+      "src": "linecons"
+    },
+    {
+      "uid": "862d4faacb164c0412cb3249d43d5d39",
+      "css": "t-shirt",
+      "code": 59774,
+      "src": "linecons"
+    },
+    {
+      "uid": "fb3ee9c192c946342e0cdd12f06d7774",
+      "css": "lightbulb",
+      "code": 59775,
+      "src": "linecons"
+    },
+    {
+      "uid": "f2a37db235ca1951d60d7ebc9733eb54",
+      "css": "videocam",
+      "code": 59776,
+      "src": "linecons"
+    },
+    {
+      "uid": "56a0672588820ab1a16363e5d07dd22e",
+      "css": "user",
+      "code": 59777,
+      "src": "linecons"
+    },
+    {
+      "uid": "ee22dc89481ea63f27654f59dcace804",
+      "css": "clock",
+      "code": 59778,
+      "src": "linecons"
+    },
+    {
+      "uid": "f8e8b267a9b949804f0c9dd7fed8e477",
+      "css": "diamond",
+      "code": 59779,
+      "src": "linecons"
+    },
+    {
+      "uid": "5d27926667773d186de09fda4312af27",
+      "css": "shop",
+      "code": 59780,
+      "src": "linecons"
+    },
+    {
+      "uid": "143d93c9abdee0f4a7a2a810acc62b91",
+      "css": "sound",
+      "code": 59781,
+      "src": "linecons"
+    },
+    {
+      "uid": "0817b47d6e5f1d85f2428640a021f0c4",
+      "css": "star",
+      "code": 59782,
+      "src": "linecons"
+    },
+    {
+      "uid": "b19ac67070bc44e310990016288e449c",
+      "css": "heart",
+      "code": 59783,
+      "src": "linecons"
+    },
+    {
+      "uid": "43e4647c57186b5e06874621b5e665be",
+      "css": "calendar",
+      "code": 59784,
+      "src": "linecons"
+    },
+    {
+      "uid": "b08f8c33777cd6b512d9576fc6e7f405",
+      "css": "food",
+      "code": 59785,
+      "src": "linecons"
+    },
+    {
+      "uid": "b8e88705f42bd79580be828233c65da0",
+      "css": "money",
+      "code": 59786,
+      "src": "linecons"
+    },
+    {
+      "uid": "3e2bd88137dd7ceec98b4bfd8640e5ec",
+      "css": "params",
+      "code": 59787,
+      "src": "linecons"
+    },
+    {
+      "uid": "91bac16b22827347e9ee20477f0b44d2",
+      "css": "mail",
+      "code": 59788,
+      "src": "linecons"
+    },
+    {
+      "uid": "9725db89b610135dc76cd8a21afffa83",
+      "css": "search",
+      "code": 59789,
+      "src": "linecons"
+    },
+    {
+      "uid": "484b4ad2058d17849f205c4054b6f315",
+      "css": "cog",
+      "code": 59790,
+      "src": "linecons"
+    },
+    {
+      "uid": "f5053e43ef8be31afb905801449ae26d",
+      "css": "truck",
+      "code": 59791,
+      "src": "linecons"
+    },
+    {
+      "uid": "6cc796276697d8a75ae21bb2df4badc9",
+      "css": "beaker",
+      "code": 59792,
+      "src": "linecons"
+    },
+    {
+      "uid": "29f4bce4a60650057c5248e30baa15a6",
+      "css": "note",
+      "code": 59793,
+      "src": "linecons"
+    },
+    {
+      "uid": "572c9ded6a688698dc275b30ff30fefa",
+      "css": "music",
+      "code": 59794,
+      "src": "linecons"
+    },
+    {
+      "uid": "b4d1d559863e88416006cb72d0355724",
+      "css": "glyph",
+      "code": 59061,
+      "src": "custom_icons",
+      "selected": false,
+      "svg": {
+        "path": "M1000 587.3L884.8 587.4 764.2 352.9H296.6L122 588.2 0 588.2V881H117.8C117.8 881.5 117.6 881.9 117.6 882.4 117.6 947.2 170.4 1000 235.3 1000S352.9 947.2 352.9 882.4C352.9 881.9 352.8 881.5 352.8 881H647.2C647.2 881.5 647.1 881.9 647.1 882.4 647.1 947.2 699.8 1000 764.7 1000S882.4 947.2 882.4 882.4C882.4 881.9 882.2 881.5 882.2 881H1000V587.3ZM818.7 587.5L589.5 587.7V411.8H728.3L818.7 587.5ZM326.1 411.8H530.6V587.8L195.3 588.1 326.1 411.8ZM235.3 941.2C202.9 941.2 176.5 914.8 176.5 882.4S202.9 823.5 235.3 823.5 294.1 849.9 294.1 882.4 267.7 941.2 235.3 941.2ZM764.7 941.2C732.3 941.2 705.9 914.8 705.9 882.4S732.3 823.5 764.7 823.5 823.5 849.9 823.5 882.4 797.1 941.2 764.7 941.2ZM941.2 822.2H865.2C844.6 787.9 807.5 764.7 764.7 764.7S684.8 787.9 664.2 822.2H335.8C315.2 787.9 278.1 764.7 235.3 764.7S155.4 787.9 134.8 822.2H58.8V647.1L941.2 646.2V822.2Z",
+        "width": 1000
+      },
+      "search": [
+        "glyph"
+      ]
     }
   ]
 }
