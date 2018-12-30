@@ -18,17 +18,17 @@ article figcaption {
 	/*background-color: #ddd;*/
 }
 
-.thumbnail-work figure{
+.thumbnail_work figure{
 	/*background: #333;*/
 }
 
 /* homepage thumbnail hover effect */
-.thumbnail-work img{
+.thumbnail_work img{
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-.thumbnail-work img:hover {
+.thumbnail_work img:hover {
 	opacity: 0.6;
 }
 
@@ -36,6 +36,23 @@ article figcaption {
 .single-project img{
 	border: 1px solid #ddd;
 }
+
+
+/* Cover(Work) page */
+
+
+.thumbnail_work h4{
+	text-transform: capitalize;
+	color: #777;
+	/*font-weight: 700;*/
+	padding-top: 10px;
+	position: absolute;
+	display: block;
+	left: 9999999px;
+}
+
+
+
 
 /*
 |--------------------------------------------------------------------------
