@@ -69,9 +69,56 @@ main img{
 	color: #b39964;
 }
 
-.single_project_page h4{
+.single_project_page h3, .single_project_page h4{
 	text-transform: capitalize;
 }
+
+.section_icon{
+	width: 38px;
+	height: auto;
+	border: none;
+	margin-right: 8px;
+	/*border: #000 1px solid;*/
+	/*position: absolute;*/
+}
+
+.project_glance{
+	width: 80%;
+	clear: both;
+	margin: 0 auto;
+	padding: 16px 0 0 0;
+	/*background-color: #ccc;*/
+}
+
+.project_glance h3{
+	font-size: 36px;
+	padding: 0;
+	margin:0 ;
+}
+
+.project_glance .custom_12{
+	border-color: #aaa;
+	display: flex;
+	clear: both;
+}
+
+.project_glance .custom_4{
+	width: 33%;
+	border-right: #ccc 1px dashed;	
+}
+
+.project_glance .custom_4:last-child{
+	border: none;
+}
+
+
+
+
+
+
+
+
+
 
 /*
 |--------------------------------------------------------------------------
