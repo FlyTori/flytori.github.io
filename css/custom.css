@@ -111,6 +111,10 @@ main img{
 	border: none;
 }
 
+img.cmp-logo{
+	border: none;
+	/*padding: 10px;*/
+}
 
 
 
