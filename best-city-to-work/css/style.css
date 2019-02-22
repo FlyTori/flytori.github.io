@@ -1,0 +1,307 @@
+
+
+/* ALL SECTIONS */
+
+body, html {
+  height: 100%;
+}
+
+.section{
+	background: #F2F5F7; /* Old browsers */
+	background: linear-gradient(#FAFBFC 0%, #F2F5F7 100%);
+	height: 100vh;
+}
+
+h1{
+	font-family: Crimson;
+	font-weight: 800;
+	font-size: 10rem;
+}
+
+h2{
+	font-family: Crimson;
+	font-weight: 800;
+	font-size: 4rem;
+}
+
+h3{
+	font-family: Crimson;
+	font-weight: 400;
+	font-size: 2rem;
+}
+
+.v-center{
+	display: flex;
+	height: 100vh;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/*.parallax { 
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}*/
+
+.full-list-link-main{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #fff;
+	background: #568A94;
+	padding: 8px;
+}
+
+.full-list-link-main:hover{
+	text-decoration: none;
+	color: #fff;
+	background: #568A94;
+	opacity: 0.8;
+}
+
+.full-list-link-sec{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	color: #568A94;
+	border: solid 1px #568A94;
+	/*background: #568A94;*/
+	padding: 8px;
+}
+
+.full-list-link-sec:hover{
+	text-decoration: none;
+	color: #568A94;
+	border: solid 1px #568A94;
+	opacity: 0.6;
+}
+
+/*SINGLE SECTION*/
+
+/*PAGE 1*/
+
+#page1{
+	height: 100vh;
+	display: flex;
+	/*background-color: #000;*/
+    background-repeat: no-repeat;
+	background-image: url("../img/states.png");
+	background-image: url("../img/states.png"),linear-gradient(#FAFBFC 0%, #F2F5F7 100%);
+	background-position: center, center;
+}
+
+
+#page1 #title-bg{
+	display: flex;
+	background-color: #fff;
+	margin: 0 auto;
+	width: 70%;
+	height: 40%;
+	border: dotted 4px #000;
+	outline: 4px solid black;
+	outline-offset: 15px;
+	padding: 32px 24px;
+	align-self: center;
+}
+
+#page1 h1{
+	display: flex;
+	color: #000; 
+	text-align: center;
+	bottom: -60px;
+	right: -5%;
+	align-self: center;
+
+}
+
+
+/*PAGE 2*/
+
+#page2 .first, #page2 .second{
+	height: 50vh;
+	display: flex;
+  	justify-content: center;
+}
+
+#page2 .first{
+	/*background-color: #ddd;*/
+	background-color: #568A94;
+}
+
+#page2 .second{
+	/*background-color: #eee;*/
+	background-color: #64A0AC;
+}
+
+#page2 h2, #page2 h3{
+	color: #fff;
+	/*display: flex;*/
+	align-self: center;
+	text-align: center;
+	/*margin: 0 auto;*/
+	font-family: Raleway;
+}
+
+#page2 h2{
+	font-size: 10rem;
+}
+
+#page2 h3{
+	font-size: 3rem;
+	font-weight: 400;
+	display: block;
+}
+
+
+/*PAGE 3*/
+
+#page3{
+	height: 100vh;
+	/*position: relative;*/
+	/*background-image: linear-gradient(rgb(0, 0, 0, 0.5) 0%, rgb(0, 0, 0,0.5) 100%), url("../img/miami.jpeg");*/
+	/*background-image: linear-gradient(rgb(250, 251, 252, 0.8) 0%, rgb(242, 245, 247,0.8) 100%), url("../img/miami.jpeg");*/
+	background-image: url("../img/miami.jpeg");
+	background-size: cover;
+	background-attachment: fixed; /*parallex*/
+}
+
+#page3 h3{
+	font-family: Poppins;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+#page3 .top1{
+	/*background-color: #568A94;*/
+	background-color: #000;
+	border: none;
+	color: #fff;
+}
+
+#page3 .top2{
+	/*background-color: #64A0AC;*/
+	background-color: #222;
+	border-top: none;
+	color: #fff;
+}
+
+#page3 .top3{
+	/*background-color: #81BAC5;*/
+	background-color: #444;
+	border: none;
+	color: #fff;
+}
+
+#page3 h2, #page5 h2{
+	margin-bottom: 32px;
+}
+
+
+
+/*PAGE 4*/
+
+#page4{
+	/*background-image: linear-gradient(rgb(0, 0, 0, 0.5) 0%, rgb(0, 0, 0,0.5) 100%), url("../img/washington.jpeg");*/
+	background-image: url("../img/washington.jpeg");
+	background-size: cover;
+	background-attachment: fixed; /*parallex*/
+}
+
+#page4 h2, #page6 h2{
+	font-size: 1.6rem;
+	font-weight: 300;
+	margin-bottom: 24px;
+}
+
+#page4 .highlight{
+	font-size: 1.8rem;
+	font-weight: 800;
+}
+
+#col-left, #page4-right{
+	background-color: #fff;
+	background-color: rgb(256 ,256 ,256, 0.95);
+	/*display: block;*/
+	height: auto;
+	border: dotted 1px #81BAC5;
+
+}
+
+#col-left, #page4-right{
+	padding: 24px 16px;
+}
+
+#page3-table{
+	background-color: rgb(256 ,256 ,256, 0.95);
+	padding: 40px 32px;
+}
+
+
+/*PAGE 5 */
+
+#page5{
+	background-image: url("../img/office.jpeg");
+	background-size: cover;
+	background-attachment: fixed; /*parallex*/
+}
+
+/*PAGE 6 */
+#page6{
+	background-image: url("../img/miami2.jpeg");
+	background-size: cover;
+	background-attachment: fixed; /*parallex*/
+}
+
+/*PAGE 7 */
+
+#page7{
+	background-image: url("../img/sky.jpeg");
+	background-size: cover;
+	background-attachment: fixed; /*parallex*/
+}
+
+#page7 {
+	display: flex;
+}
+
+#page7 h2{
+	font-size: 8rem;
+	font-style: italic;
+}
+
+#page7 h3{
+	font-size: 1.8rem;
+	font-family: Raleway;
+}
+
+#page7 .content{
+	/*background-color: #ddd;*/
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 10%;
+	align-items: center;
+	flex-direction: column; 
+}
+
+#page7 .ctr{
+	margin-top: 5%;
+}
+
+#page7 .btn{
+	width: 100%;
+	color: #fff;
+	border: solid 1px #000;
+	border-radius: 32px;
+	background-color: #000;
+}
+
+#page7 .btn:hover{
+	opacity: 0.8;
+}
+
+
+
+
