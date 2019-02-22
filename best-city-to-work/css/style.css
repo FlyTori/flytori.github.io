@@ -2,6 +2,21 @@
 
 /* ALL SECTIONS */
 
+#logo{
+	position: absolute;
+	bottom: 10%;
+	left: 47%;
+}
+
+#page1{
+	position: relative;
+}
+
+#logo img{
+	width: 100px;
+
+}
+
 body, html {
   height: 100%;
 }
