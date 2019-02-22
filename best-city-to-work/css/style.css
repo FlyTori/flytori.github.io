@@ -1,21 +1,4 @@
-
-
 /* ALL SECTIONS */
-
-#logo{
-	position: absolute;
-	bottom: 10%;
-	left: 47%;
-}
-
-#page1{
-	position: relative;
-}
-
-#logo img{
-	width: 100px;
-
-}
 
 body, html {
   height: 100%;
@@ -97,7 +80,18 @@ h3{
 
 /*PAGE 1*/
 
+#logo img{
+	width: 100px;
+}
+
+#logo{
+	position: absolute;
+	bottom: 10%;
+	left: 47%;
+}
+
 #page1{
+	position: relative;
 	height: 100vh;
 	display: flex;
 	/*background-color: #000;*/
@@ -106,7 +100,6 @@ h3{
 	background-image: url("../img/states.png"),linear-gradient(#FAFBFC 0%, #F2F5F7 100%);
 	background-position: center, center;
 }
-
 
 #page1 #title-bg{
 	display: flex;
@@ -317,7 +310,3 @@ h3{
 #page7 .btn:hover{
 	opacity: 0.8;
 }
-
-
-
-
