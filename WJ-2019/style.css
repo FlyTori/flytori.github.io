@@ -58,7 +58,6 @@ nav ul{
 
 nav .social-link{
 	margin-right: 16px;
-	height: 32px;
 	
 }
 
@@ -67,23 +66,9 @@ nav .social-link img{
 	height: 32px;
 }
 
-@media (max-width: 720px){
-	#logo{
-		width: 180px;
-	}
-	#bg-nav{
-	height: 86px;
-	content: "";
 
-}
-
-@media (min-width: 720px){
-	#logo{
-		width: 240px;
-	}
-	#bg-nav{
-	height: 93px;
-	content: "";
+#logo{
+	width: 240px;
 }
 
 .navbar{
@@ -100,7 +85,9 @@ nav .social-link img{
 	}	
 }
 
-
+#bg-nav{
+	height: 93px;
+	content: "";
 	/*background-color: #333;*/
 }
 
