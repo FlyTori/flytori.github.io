@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=cwTeXFangSong" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
@@ -15,7 +18,7 @@
   <body>
     <div>
 
-      <nav id="nav" class="navbar fixed-top navbar-expand-md navbar-light bg-white justify-content-between">
+      <nav id="nav" class="navbar fixed-top navbar-expand-md navbar-light bg-white">
         <div id="logo">
           <a class="navbar-brand" href="#">
             <img class="img-fluid" src="img/logo.png" alt="">
@@ -26,7 +29,9 @@
         </button> -->
 
         <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0 d-flex justify-content-end">
+            <a class="social-link d-flex justify-content-end align-items-center" href="https://www.facebook.com/WomenEmpowerJP/" target="_blank"><img src="img/fb.png" alt=""></a>
             <li class="nav-item">
               <a class="nav-link" href="#about">關於女力</a>
             </li>
@@ -34,7 +39,7 @@
               <a class="nav-link" href="#event">活動資訊</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#speaker">講者陣容</a>
+              <a class="nav-link" href="#speaker">講者介紹</a>
             </li>
             <li class="nav-item">
               <a id="signup-top" class="nav-link btn-main"href="#event">線上報名</a>
@@ -52,10 +57,10 @@
       <div id="banner" class="container-fluid">
         <div id="banner-text" class="container">
           <div class="row">
-            <div class="col-12 col-lg-4"></div>
+            <div class="col-12 col-lg-4 "></div>
             <div class="col-12 col-lg-8">
-              <div id="banner-text-top"><img  class="img-fluid" src="img/banner_text_top.png" alt=""></div>
-              <div id="banner-text-bottom" class="img-fluid"><img src="img/banner_text_bottom.png" alt=""></div>
+              <div id="banner-text-top" class="mx-auto"><img id="top-image" class="img-fluid" src="img/banner_text_top.png" alt=""></div>
+              <div id="banner-text-bottom" class="img-fluid mx-auto"><img src="img/banner_text_bottom.png" alt=""></div>
               
             </div>
           </div>
@@ -66,64 +71,91 @@
         <section id="about" class="section">
           <div class="section-header">
             <h4 class="text-center"><small>01</small></h4>
-            <h2 class="text-center font-weight-normal">關於女力</h2>
+            <h3 class="text-center font-weight-normal">關於女力</h3>
             <h4 class="text-center"><small>Women's Power in Japan</small></h4>
           </div>
-          <div class="section-content">
-            <p>30代，好像一個分水嶺，一個告訴你應該怎麼走的分水嶺。</p>
-            <p>你應該找個安定的工作，你應該在工作上有點成就，你應該結婚，你應該回家打理家裡，你應該不要追求太多，許多的你應該......</p>
-            <p>當你據理力爭，他們說你是歇斯底里 情緒化；</p>
-            <p>當你努力追尋自己想達成的目標時，他們說你只是在走跟別人一樣的路；</p>
-            <p>當你往夢想前進，他們說那不是夢想，只是你沒想清楚；</p>
-            <p>你很多的想法想去實踐，大家卻告訴你不可能；</p>
-            <p>你必須用力的掂著腳尖，大家才會看到你；</p>
-            <p>儘管如此，你仍想要跨出那步，告訴自己可以的......</p>
+
+          <div class="container">
+            <div class="row">
+              <div id="concept" class="col-12 col-md-10 col-lg-8 mx-auto text-center pt-lg-2 pb-lg-2">
+                <p class="font-weight-normal lead text-main-color highlight-text font-song">「女子力」</p>
+                <p class="lead">在日本，時常會使用女子力的高低去形容一位女性是否具備女性應有的特質。</p>
+                <br>
+                <p class="font-weight-normal lead text-main-color highlight-text font-song">「女力」≠ 「女子力」</p>
+                <p class="lead">身為外國女性的我們，相較日本女性溫柔的存在，是更堅韌、強悍、勇於嘗試探索。即使會會迷惘、會徬徨、更會挫折，但仍敢作夢、去闖、去冒險前進的堅韌精神，是女力最想支援也最想傳達給大家的。</p>
+                <br>
+                <p class="blockquote mt-4">We inspire women around the world to be the heroines of their own stories, every day</p>
+                <p class="blockquote-footer">Kate Spade</p>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         
         <section id="event" class="section">
           <div class="section-header">
             <h4 class="text-center"><small>02</small></h4>
-            <h2 class="text-center font-weight-normal">活動資訊</h2>
+            <h3 class="text-center font-weight-normal">活動資訊</h3>
             <h4 class="text-center"><small>Event</small></h4>
           </div>
 
-          <div class="container">
+          <div class="container pb-lg-4">
             <div class="row">
-              <div id="event-detail" class="col-12 col-md-10 col-lg-8 mx-auto pt-4"> 
+              <div class="col-12 col-md-12 col-lg-8 mx-auto mb-4 text-center">
+                <h5 class="font-weight-light pb-2">主題演講</h5>
+                <h2 id="event-title" class="mb-2 font-weight-light text-main-color font-ming">女力 in Japan - 30代的迷惘跟選擇</h2>
+                <h3 class="text-body font-song">2019/04/13 (六) 13:30 - 17:00</h3>
+              </div>
+              <div class="col-12 col-md-10 col-lg-6 mx-auto pt-lg-4 font-weight-light">
+                <p class="font-weight-normal">30代，好像一個分水嶺，一個從此需要滿足眾人期待，過著循規蹈循的分水嶺。</p>
+                <p>你應該找個安定的工作，你應該在工作上有點成就，你應該結婚，你應該在工作和家庭中取得那傳說中的平衡;許多本就對女性投射的刻板印象，再加上社會和文化中默認的期待，造就出一道又一道的「你應該......」當你還在努力追尋自己想達成的目標時，他們說那不是夢想，只是20代遺留的幻想，還未成熟，年少輕狂。</p>
+                <p>因為人不能什麼都要，成熟的標準，就是學會取捨。儘管如此，你仍想要跨出那步，告訴自己可以的。這個世界很大，或許，這樣的自己仍有很多需要探索的地方，但，有許多的前輩可以分享她們眼中的這段風景，她們的選擇，她們的收穫。</p>
+                <p>或許，抉擇終要做。但不一定是放棄，而是重新排列組合。研究如何精化這柴米油鹽的尋常。</p>
+                
+              </div>
+              <div id="event-detail" class="col-12 col-md-10 col-lg-6 mx-auto pt-4 pb-4"> 
                 <div class="container">
                   <div class="row">
-                    <div id="event-title" class="col text-center mb-4">
-                    <h2 class="mb-4 font-weight-bold">女力 in Japan - 30代的迷惘跟選擇</h2>
-                    <h3 class="text-body">2019/04/13 (六) 13:30 - 17:00</h3>
+                    <div class="col text-center mb-4">
+                    
                     </div>
                   </div>
                 </div>
 
                 <div class="container">
                   <div class="row">
-                    <div class="col-3 col-md-4">
+                    <div class="col-3 col-md-3">
                       <p class="detail-title text-right">時程</p>
                     </div>
-                    <div class="col-9 col-md-8">
+                    <div class="col-9 col-md-9">
                       <p class="detail-text">13:30 入場<br>14:00-15:00 座談討論會<br>15:00-17:00 交流會</p>
                     </div>
                   </div>
                   
                   <div class="row">
-                    <div class="col-3 col-md-4">
+                    <div class="col-3 col-md-3">
                       <p class="detail-title text-right">收費</p>
                     </div>
-                    <div class="col-9 col-md-8">
+                    <div class="col-9 col-md-9">
                       <p class="detail-text">¥2,000 (早鳥)、¥2,500 (一般)</p>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col-3 col-md-4">
+                    <div class="col-3 col-md-3">
                       <p class="detail-title text-right">地點</p>
                     </div>
-                    <div class="col-9 col-md-8">
-                      <p class="detail-text">秋葉原/ 末広町 東京都千代田區1-2-3 XXビル 6F</p>
+                    <div class="col-9 col-md-9">
+                      <p class="detail-text">秋葉原/ 末広町 千代田区外神田4-9-2 1F~3F
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-3 col-md-3">
+                      <p class="detail-title text-right">交通方式</p>
+                    </div>
+                    <div class="col-9 col-md-9">
+                      <p class="detail-text">JR 秋葉原駅/東京メトロ銀座線 末広町駅  徒歩5分<br>JR 御徒町駅/東京メトロ千代田線 湯島駅  徒歩10分
+                      </p>
                     </div>
                   </div>
                   <div class="row">
@@ -143,29 +175,49 @@
         <section id="speaker" class="section">
           <div class="section-header">
             <h4 class="text-center"><small>03</small></h4>
-            <h2 class="text-center font-weight-normal">講者介紹</h2>
+            <h3 class="text-center font-weight-normal">講者介紹</h3>
             <h4 class="text-center"><small>Speaker</small></h4>
           </div>
-          <div class="container">
+          <div class="container pt-lg-4 pb-lg-4">
             <div class="row">
-              <div class="col-sm-6 col-md-3">
-                <img class="img-speaker" src="https://loremflickr.com/360/360/ocean" alt="">
+              <div class="col-md-4 col-lg-2 pb-4 pt-2">
+                <img class="img-speaker" src="img/coming-soon.jpg" alt="">
               </div>
-              <div class="col-sm-6 col-md-3">
+              <div class="col-md-8 col-lg-4 pb-4 pt-2">
                 <h4>ROMI</h4>
-                <p>台灣長大，英國求學。</p>
-                <p>來日本是為了跟交往10年的日本男友結婚。婚後用獎學金唸了研究所，畢業進入外商IT產業當顧問。</p>
-                <p>工作兩年之後離婚。現在從事行銷，跟現任老公還有兩個可愛小孩（4，1歲）住在一起。興趣是旅遊，還有吃。</p>
+                <p class="font-weight-normal">台灣長大，英國求學。來日本是為了跟交往10年的日本男友結婚。婚後用獎學金唸了研究所，畢業進入外商IT產業當顧問。</p>
+                <p class="font-weight-normal">工作兩年之後離婚。現在從事行銷，跟現任老公還有兩個可愛小孩（4，1歲）住在一起。興趣是旅遊，還有吃。</p>
+                <h6>個人經歷</h6>
+                <ul class="font-weight-lighter">
+                  <li>英國City University, Cass Business School</li>
+                  <li>系統整合公司專案PMO</li>
+                  <li>某國經濟貿易辦事處貿易推廣專員</li>
+                  <li>関西学院經營戰略研究所</li>
+                  <li>日本IBM ERP/ Strategy顧問</li>
+                  <li>日本 IBM Partner Marketing Campaign Manager</li>
+                </ul>
+                <h6>WIJ專訪</h6>
+                <a class="text-main-color" href="http://www.worklifeinjapan.net/2018/10/%E6%97%A5%E6%9C%AC%E8%81%B7%E5%A0%B4%E5%AA%BD%E5%AA%BD%E7%94%9F%E5%AD%98%E4%B9%8B%E9%81%93-it%E6%A5%AD%E7%9A%84romi.html" target="_blank">日本職場媽媽生存之道 – IT業的Romi</a>
               </div>
-              <div class="col-sm-6 col-md-3">
-                <img class="img-speaker" src="https://loremflickr.com/360/360/ocean" alt="">
+
+              <div class="col-md-4 col-lg-2 pb-4 pt-2">
+                <img class="img-speaker" src="img/coming-soon.jpg" alt="">
               </div>
-              <div class="col-sm-6 col-md-3">
-                <h4>ROMI</h4>
-                <p>台灣長大，英國求學。</p>
-                <p>來日本是為了跟交往10年的日本男友結婚。婚後用獎學金唸了研究所，畢業進入外商IT產業當顧問。</p>
-                <p>工作兩年之後離婚。現在從事行銷，跟現任老公還有兩個可愛小孩（4，1歲）住在一起。興趣是旅遊，還有吃。</p>
-              </div>      
+              <div class="col-md-8 col-lg-4 pb-4 pt-2">
+                <h4>吳欣芸（Nancy)</h4>
+                <p class="font-weight-normal">牡羊座、常被說命盤裡有三匹馬。有位哈日的父親，留學日本是父親旨意。</p>
+                <p>因為愛旅遊而脫離上班族，當過導遊/節目企劃/口譯，也去泰國工作。</p>
+                <p>現為個人工作室 ，業務內容為部落客經紀/協助日本企業對台宣傳。</p>
+                <h6>個人經歷</h6>
+                <ul class="font-weight-lighter">
+                  <li>立命館亞州太平洋大學</li>
+                  <li>日文國際領隊/導遊執照</li>
+                  <li>ロート製薬株式会社（樂敦製藥）國際採購</li>
+                  <li>吉本興業株式会社　台灣事業窗口</li>
+                </ul>
+                <h6>WIJ專訪</h6>
+                <a class="text-main-color" href="http://www.worklifeinjapan.net/2015/09/hsinyun-entertainment-project-translator.html" target="_blank">雜食性人生，不上班的另一種選擇：演藝口譯/企劃的欣芸</a>
+              </div>    
             </div>
           </div>
         </section>
@@ -173,20 +225,24 @@
         <section id="sponsor" class="section">
           <div class="section-header">
             <h4 class="text-center"><small>04</small></h4>
-            <h2 class="text-center font-weight-normal">活動協力</h2>
+            <h3 class="text-center font-weight-normal">活動協力</h3>
             <h4 class="text-center"><small>Sponsor</small></h4>
           </div>
-          <div class="container">
+          <div class="container pt-lg-4 pb-lg-4">
             <div class="row">
-              <div class="col-6 col-sm-4">
+              <div class="sponsor-logo col-9 col-md-4 pt-2 pb-2">
                  <img class="img-sponsor" src="img/logo-wij.png" alt="">
               </div>
-              <!-- <div class="col-6 col-sm-4">
-                 <img class="img-sponsor" src="img/logo-wij.png" alt="">
-              </div> -->
-              <!-- <div class="col-6 col-sm-4">
-                 <img class="img-sponsor" src="img/logo-wij.png" alt="">
-              </div> -->
+              <div class="col-3 col-md-2 pt-2 pb-2">
+                 <img class="img-sponsor square-logo" src="img/logo-TCDC.png" alt="">
+              </div>
+              <div class="sponsor-logo col-4 col-md-2 pt-2 pb-2">
+                 <img id="crossing-logo" class="img-sponsor" src="img/logo-one-third.png" alt="">
+              </div>
+              <div class="sponsor-logo col-8 col-md-4 pt-2 pb-2">
+                 <img id="crossing-logo" class="img-sponsor" src="img/crossing-logo.png" alt="">
+              </div>
+              
             </div>
           </div>
         </section>
