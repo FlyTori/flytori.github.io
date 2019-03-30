@@ -268,3 +268,20 @@ RESPONSIVE
 		height: 80%;
 	}	
 }
+
+@media screen and (max-width: 375px){
+	#banner{
+		height: 320px;
+		background-attachment: scroll;
+	}
+	#banner-text-top{
+		top: 10%;
+		width: 100%;
+		/*max-width: 350px;*/
+	}
+	#banner-text-bottom{
+		top: 15%;
+		width: 100%;
+		/*max-width: 350px;*/
+	}
+}
