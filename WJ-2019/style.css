@@ -86,6 +86,7 @@ BANNER
 	background-color: #ddd;
 	width: 100%;
 	background-image: url("img/banner_bg.jpg");
+	background-attachment: scroll;
 	background-attachment: fixed;
   	background-position: center;
   	background-color: #ddd;
@@ -229,6 +230,7 @@ RESPONSIVE
 	}
 	#banner-text-bottom{
 		top: 5%;
+		background-attachment: scroll;
 	}
 	#banner-text-bottom img{
 		width: 70%;
@@ -245,7 +247,7 @@ RESPONSIVE
 		height: 71px;
 	}
 	#banner{
-		height: 420px;
+		height: 400px;
 		background-attachment: scroll;
 	}
 	#banner-text img{
