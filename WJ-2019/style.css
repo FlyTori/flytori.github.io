@@ -86,6 +86,7 @@ BANNER
 	background-color: #ddd;
 	width: 100%;
 	background-image: url("img/banner_bg.jpg");
+	background-attachment: scroll;
 	background-attachment: fixed;
   	background-position: center;
   	background-color: #ddd;
