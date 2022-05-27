@@ -1,0 +1,975 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+  v2.0 | 20110126
+  License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container-wide {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container-wide {
+    width: 100%;
+  }
+}
+
+.container-full {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1085px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col-12-lg, .col-6-lg, .col-4-lg, .col-3-md, .col-12-md, .col-6-md, .col-4-md, .col-3-md, .col-12-sm, .col-6-sm, .col-4-sm, .col-3-sm {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-12 {
+  width: 100px;
+}
+
+.col-10 {
+  width: 83.3333%;
+}
+
+.col-8 {
+  width: 66.6666%;
+}
+
+.col-7 {
+  width: 58.3333%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.6666%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.6666%;
+}
+
+@media (max-width: 1140px) {
+  .container {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+  .col-12-lg {
+    width: 100%;
+  }
+  .col-6-lg {
+    width: 50%;
+  }
+  .col-4-lg {
+    width: 33.33333%;
+  }
+  .col-3-lg {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .col-12-md {
+    width: 100%;
+  }
+  .col-6-md {
+    width: 50%;
+  }
+  .col-4-md {
+    width: 33%;
+  }
+  .col-3-md {
+    width: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .col-12-sm {
+    width: 100%;
+  }
+  .col-6-sm {
+    width: 50%;
+  }
+  .col-4-sm {
+    width: 33%;
+  }
+  .col-3-sm {
+    width: 25%;
+  }
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.space-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 70px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 46px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 35px;
+}
+
+@media (max-width: 768px) {
+  h4 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 29px;
+}
+
+h6 {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.color-primary {
+  color: #56C4C5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-primary {
+  display: inline-block;
+  height: 50px;
+  padding: 12px 32px;
+  background-color: #56C4C5;
+  border-radius: 100px;
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.btn-primary-border {
+  display: inline-block;
+  height: 50px;
+  padding: 12px 32px;
+  background-color: #FFFFFF;
+  border: 1px solid #56C4C5;
+  color: #56C4C5;
+  border-radius: 100px;
+  font-family: "Noto Sans TC";
+  font-size: 18px;
+  line-height: 26px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  display: inline-block;
+  height: 40px;
+  padding: 8px 32px;
+  background-color: #FF5D50;
+  border-radius: 100px;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.card {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+  border-radius: 12px;
+  background-color: #fff;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 2px 10px #00000014;
+          box-shadow: 0px 2px 10px #00000014;
+}
+
+.bg-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  .sm-hidden {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: "Noto Sans TC";
+  color: #221E1F;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .index-top {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home.svg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+  }
+}
+
+nav {
+  padding: 24px 0;
+}
+
+nav .logo {
+  max-width: 218px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 16px 0;
+    border-bottom: 2px solid #FFD153;
+    background-color: #fff;
+  }
+  nav .logo {
+    max-width: 130px;
+  }
+}
+
+.hero {
+  padding-bottom: 217px;
+}
+
+.hero .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .hero .image {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/bg_home_sm.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom right;
+  }
+}
+
+.hero h1 {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-bottom: 92px;
+  }
+  .hero .promo-text {
+    margin-bottom: 32px;
+  }
+  .hero h6 {
+    margin-top: 32px;
+  }
+}
+
+.platforms {
+  position: relative;
+}
+
+@media (min-width: 769px) {
+  .platforms::before {
+    content: "";
+    width: 138px;
+    height: 360px;
+    position: absolute;
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: -100px;
+    margin-top: -260px;
+    background-position: -222px 0;
+  }
+}
+
+.platforms h2 {
+  margin-bottom: 48px;
+}
+
+.platforms h4 {
+  margin: 24px 0;
+}
+
+.platforms .row {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.platforms .small {
+  max-width: 280px;
+}
+
+.platforms .small img {
+  max-width: 90px;
+}
+
+.platforms p {
+  color: #747474;
+}
+
+@media (max-width: 768px) {
+  .platforms::before {
+    content: "";
+    width: 49px;
+    height: 126px;
+    position: absolute;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball01.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -77px 0;
+    margin-left: -20px;
+  }
+  .platforms h2 {
+    margin-bottom: 32px;
+  }
+  .platforms h4 {
+    margin: 16px 0;
+  }
+  .platforms .platform {
+    margin-bottom: 24px;
+  }
+  .platforms .small {
+    max-width: 240px;
+  }
+  .platforms .small img {
+    max-width: 60px;
+  }
+}
+
+.character {
+  margin-top: 100px;
+  position: relative;
+}
+
+.character h2 {
+  margin-bottom: 16px;
+}
+
+.character h6 {
+  margin-bottom: 48px;
+}
+
+.character .card {
+  padding-bottom: 24px;
+  height: 100%;
+}
+
+.character .card p {
+  margin: 16px 16px;
+}
+
+.character .card .img {
+  max-width: 100%;
+  height: 260px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+
+.character .card1 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch01.svg);
+}
+
+.character .card2 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch02.svg);
+}
+
+.character .card3 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch03.svg);
+}
+
+.character .card4 {
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ch04.svg);
+}
+
+@media (min-width: 769px) {
+  .character::after {
+    content: "";
+    position: absolute;
+    top: 400px;
+    right: 0;
+    width: 210px;
+    height: 310px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .character {
+    margin-top: 60px;
+  }
+  .character::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    width: 88px;
+    height: 135px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball02.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .character .card {
+    margin: 0 38px 24px 38px;
+    height: auto;
+  }
+}
+
+.feature {
+  margin-top: 100px;
+}
+
+.feature .cards {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.feature .card {
+  max-width: 230px;
+  padding: 32px;
+  margin-bottom: 28px;
+}
+
+.feature .card h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.feature .card1, .feature .card3 {
+  margin-right: 46px;
+}
+
+.feature .img {
+  width: 86px;
+  height: 86px;
+  border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.feature .img img {
+  max-width: 52px;
+}
+
+.feature .promo {
+  max-width: 395px;
+  margin-top: 165px;
+}
+
+.feature .promo h2 {
+  margin-bottom: 16px;
+}
+
+.feature .promo h6 {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .feature .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .feature .promo {
+    max-width: 100%;
+  }
+  .feature .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .feature a {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feature {
+    margin-top: 60px;
+  }
+  .feature .card {
+    width: 230px;
+    margin: 0 52px 24px 52px;
+  }
+  .feature .promo {
+    margin-top: 0;
+  }
+}
+
+.review {
+  margin-top: 100px;
+  position: relative;
+}
+
+.review::before {
+  position: absolute;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: -100px;
+  margin-top: 30px;
+}
+
+.review .card {
+  margin-top: 104px;
+  padding: 48px 32px 24px 32px;
+  position: relative;
+}
+
+.review .card .avatar img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -56px;
+  border-radius: 100px;
+}
+
+.review .card .review-content {
+  padding-bottom: 24px;
+  border-bottom: #DDD 1px solid;
+}
+
+.review .card .intro {
+  padding-top: 24px;
+}
+
+.review .card .title {
+  margin-bottom: 8px;
+}
+
+.review .card .rating {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review .card .stars .star {
+  width: 17px;
+  height: 16px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_star.svg);
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .review {
+    margin-top: 36px;
+  }
+  .review .card {
+    margin-top: 88px;
+    margin-bottom: 0;
+  }
+}
+
+.bottom-promo {
+  margin-top: 100px;
+  padding-top: 260px;
+  padding-bottom: 100px;
+}
+
+@media (min-width: 768px) {
+  .bottom-promo.container-wide {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/home_footer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottom-promo.container-wide {
+    background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/footer_sm.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.bottom-promo h2 {
+  margin-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .bottom-promo {
+    padding-top: 293px;
+  }
+  .bottom-promo h2 {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+.price-top {
+  position: relative;
+}
+
+.price-top::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  min-height: 495px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner.svg);
+  background-repeat: no-repeat;
+  background-color: #F7F9FD;
+  background-position: right top;
+  border-bottom-left-radius: 300px;
+  background-size: contain;
+  z-index: -1;
+}
+
+@media (max-width: 576px) {
+  .price-top::before {
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/banner_sm.svg);
+    border-bottom-left-radius: 150px;
+    background-size: contain;
+    background-size: cover;
+    background-position: left top;
+    height: 495px;
+  }
+}
+
+.price-top h1 {
+  margin-top: 92px;
+}
+
+@media (max-width: 768px) {
+  .price-top h1 {
+    margin-top: 48px;
+  }
+}
+
+.plan {
+  margin-top: 100px;
+  background: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/ball03.svg);
+  background-repeat: no-repeat;
+  background-position: -280px 300px;
+  background-size: 361px;
+}
+
+.plan h2 {
+  margin-bottom: 48px;
+}
+
+.plan .price-tags {
+  margin-bottom: 54px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: scroll;
+}
+
+.plan .price-tags::-webkit-scrollbar {
+  display: none;
+}
+
+.plan .price-tags a {
+  margin-right: 16px;
+  min-width: 146px;
+  text-align: center;
+}
+
+.plan .plan-card .header {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 16px 24px;
+}
+
+.plan .plan-card .content {
+  padding: 32px 24px;
+}
+
+.plan .plan-card .content .intro {
+  margin-bottom: 16px;
+}
+
+.plan .plan-card .equal-icon {
+  font-size: 29px;
+}
+
+.plan .plan-card .highlight-box {
+  background-color: #F5F5F5;
+  padding: 24px 8px;
+  border-radius: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.plan .plan-card .highlight-box .title {
+  font-size: 12px;
+}
+
+.plan .plan-card .highlight-box .highlight {
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+.plan .plan-card .highlight-box .small {
+  font-size: 12px;
+}
+
+.plan .plan-card li {
+  margin: 16px 0;
+}
+
+.plan .plan-card .feature-check {
+  position: relative;
+  margin-left: 32px;
+}
+
+.plan .plan-card .feature-check::before {
+  content: "";
+  position: absolute;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/f70f00178a7f0baa31e9c01634303d8562cfe93a/chatTalker_images/icon_check.svg);
+  width: 20px;
+  height: 16px;
+  left: -32px;
+  top: 0;
+}
+
+.plan .plan-card a {
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .plan {
+    margin-top: 220px;
+    background-position: -100px 740px;
+    background-size: 208px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .plan h2 {
+    margin-bottom: 24px;
+  }
+  .plan .price-tags {
+    margin-right: -20px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    margin-bottom: 32px;
+  }
+  .plan .price-tags a {
+    height: 40px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 8px 16px;
+    margin-right: 8px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .plan .plan-card {
+    margin-bottom: 24px;
+  }
+}
+
+.faq {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+.faq h2 {
+  margin-bottom: 48px;
+}
+
+.faq li {
+  padding: 16px 32px;
+  margin-bottom: 16px;
+}
+
+.faq .expanded .title-text {
+  color: #56C4C5;
+  line-height: 28px;
+}
+
+.faq .expanded .answer {
+  margin-top: 16px;
+  color: #747474;
+  margin-bottom: 16px;
+}
+
+.faq .expanded .answer p {
+  line-height: 32px;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    margin-top: 36px;
+  }
+}
+
+footer {
+  padding: 16px 0;
+  background-color: #F5F5F5;
+}
+/*# sourceMappingURL=all.css.map */
